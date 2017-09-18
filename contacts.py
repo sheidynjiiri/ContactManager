@@ -1,21 +1,16 @@
 class Contact:
-	def __init__(self,name,phone_number,email):
+	def __init__(self,name,phone_number,email,website):
 		self.name=name
-		self.phone=phone_number
+		self.phone_number=phone_number
 		self.email=email
+		self.website=website
 
-	def Njiiri(self):
-		self.name="Njiiri"
-	def Ndungu(self):
-		self.name="Ndungu"
+		
+	def create_contact(self):
+		self.name=input("Enter contact name")
+		self.phone=input("Enter phone number")
+		self.email=input("Enter email address")
+		self.website=input("Enter website address")
 
-	def phone_number_(self):
-		self.phone_number="0201415048"
-
-	def email_(self):
-		self.email=("sheidynjiiri@gmail.com")
-
-Njiiri_contact=Contact("Njiiri", "0201415048", "sheidynjiiri@gmail.com")
-Ndungu_contact=Contact("Ndungu", "0726946002", "dennisttech@gmail.com")
-print (Njiiri_contact.name)
-print (Ndungu_contact.email)
+derrick=Contact("", "", "", "")
+derrick.create_contact()
